@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Hello</title>
+        <meta charset="utf-8">
+    </head>
+<style>
+
+</style>
+<body>
+    <input type="checkbox" id="ramka_obr" onchange="ramka()"><h2>Ramka</h2><br>
+    <img src="pacific-drive-logo-key-art.jpg" alt="obrazek" id="obr">
+    <script>
+        function ramka(){
+            if(document.getElementById("ramka_obr").checked){
+                document.getElementById("obr").style="border: 5px solid black; margin: 5px; padding: 5px;";
+            }else{
+                document.getElementById("obr").style="";
+            }
+        }
+    </script>
+</body>
+</html>

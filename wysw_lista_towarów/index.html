@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Hello 3</title>
+        <meta charset="utf-8">
+    </head>
+<body>
+    <ol>
+    <form>
+        <li>
+        <input type="checkbox" id="chleb" value="5" onchange="s_chleb()">chleb 5zł<br>
+        </li>
+        <li>
+        <input type="checkbox" id="maslo" value="10" onchange="s_maslo()">masło 10zł<br>
+        </li>
+        <li>
+        <input type="checkbox" id="cukier" value="22" onchange="s_cukier()">cukier 22zł<br>    
+        </li>
+    </form>
+    </ol>
+    <h3>Suma :<p id="wynik">0</p>zł</h3>
+    <script>
+        let suma=0;
+        function s_chleb(){
+            if(document.getElementById("chleb").checked){
+                suma=suma+parseInt(document.getElementById("chleb").value);
+                document.getElementById("wynik").innerHTML="Suma :"+suma+"zł";
+            }else{
+                suma=suma-parseInt(document.getElementById("chleb").value);
+                document.getElementById("wynik").innerHTML="Suma :"+suma+"zł";
+            }
+        }
+        function s_maslo(){
+            if(document.getElementById("maslo").checked){
+                suma=suma+parseInt(document.getElementById("maslo").value);
+                document.getElementById("wynik").innerHTML="Suma :"+suma+"zł";
+            }else{
+                suma=suma-parseInt(document.getElementById("maslo").value);
+                document.getElementById("wynik").innerHTML="Suma :"+suma+"zł";
+            }
+        }
+        function s_cukier(){
+            if(document.getElementById("cukier").checked){
+                suma=suma+parseInt(document.getElementById("cukier").value);
+                document.getElementById("wynik").innerHTML="Suma :"+suma+"zł";
+            }else{
+                suma=suma-parseInt(document.getElementById("cukier").value);
+                document.getElementById("wynik").innerHTML="Suma :"+suma+"zł";
+            }
+        }
+    </script>
+</body>
+</html>

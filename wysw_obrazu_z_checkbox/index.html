@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Hello</title>
+        <meta charset="utf-8">
+    </head>
+<body>
+<form>
+    <input type="checkbox" id="film" onchange="film_f()"><br>
+    <input type="checkbox" id="music" onchange="music_f()"><br>
+    <input type="checkbox" id="sport" onchange="sport_f()"><br>
+</form>
+<img src="doge_goal.webp" id="film_obr"  alt="" style="display: none; width: 300px ;height: 250px;">
+<img src="pacific-drive-logo-key-art.jpg" id="music_obr" alt="" style="display: none; width: 300px ;height: 250px;">
+<img src="spring_trapTo_Wallpaper.jpg" id="sport_obr" alt="" style="display: none; width: 300px ;height: 250px;">    
+<script>
+    function film_f(){
+        if(document.getElementById("film").checked){
+            document.getElementById("film_obr").style="dicplay: inline; width: 600px ;height: 400px;";
+        }else{
+            document.getElementById("film_obr").style="display: none";
+        }
+    }
+    function music_f(){
+        if(document.getElementById("music").checked){
+            document.getElementById("music_obr").style="display: inline; width: 600px ;height: 400px;";
+        }else{
+            document.getElementById("music_obr").style="display: none;";
+        }
+    }
+    function sport_f(){
+        if(document.getElementById("sport").checked){
+            document.getElementById("sport_obr").style="display: inline; width: 600px ;height: 400px;";
+        }else{
+            document.getElementById("sport_obr").style="display: none;";
+        }
+    }
+</script>
+</body>
+</html>
